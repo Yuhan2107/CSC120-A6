@@ -56,7 +56,7 @@ public class ResaleShop {
     * @param newOS "None" or new OS
     * @throws Exception if computer is not in inventory 
     */
-    public void refurbish(Computer comp, String newOS) throws Exception {
+    public void refurbish(Computer comp, String newOS) throws RuntimeException {
         if (!this.inventory.contains(comp)) {
             throw new Exception("Computer not in inventory");
         } 
