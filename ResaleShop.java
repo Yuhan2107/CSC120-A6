@@ -23,7 +23,7 @@ public class ResaleShop {
      * @param newComputer the computer to add to inventory 
      * @throws Exception if computer is already in inventory  
      */
-    public void buy(Computer newComputer) throws Exception {
+    public void buy(Computer newComputer) throws RuntimeException {
         newComputer = new Computer("2019 MacBook Pro", "Intel", 256, 16, "High Sierra", 2019, 1000);
         this.inventory.add(newComputer); 
     }
@@ -33,7 +33,7 @@ public class ResaleShop {
      * @param comp computer to sell 
      * @throws Exception if computer is not in inventory 
      */
-    public void sell(Computer comp) throws Exception {
+    public void sell(Computer comp) throws RuntimeException {
         this.inventory.remove(comp); 
     }
 
